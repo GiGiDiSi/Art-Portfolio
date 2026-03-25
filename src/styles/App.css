@@ -1,0 +1,42 @@
+div.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.5rem
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem
+}
+
+div.card {
+    padding: 2rem
+}
+
+a, .icon {
+    text-decoration: none;
+    transition: .2s;
+    color: #fdd6dd;
+}
+
+.icon:hover{
+    color: #f178a1;
+}
+
+.btn{
+    width: 13rem;
+}
+
+.fade-in-element {
+  animation: fadein 0.5s forwards;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

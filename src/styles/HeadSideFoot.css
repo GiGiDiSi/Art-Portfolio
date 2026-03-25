@@ -1,0 +1,53 @@
+header,footer{
+    padding: 10px;
+    left: 0;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    bottom: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.sidebar {
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #372d36;
+    z-index: 5; /* Make sure this is higher than other content */
+    
+    /* This moves the sidebar completely off-screen to the left */
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; /* Animate the transform */
+    
+    display: flex;
+    justify-content: center;
+}
+
+/* When the 'open' class is present, move it back to position 0 */
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sideCon{
+   flex-grow: 1; /* Allows the content to fill the remaining space */
+   padding: 20px;   
+   width: 100%;
+}
+
+#pfp{
+    width: 150px;
+    border-radius: 50%;
+}
