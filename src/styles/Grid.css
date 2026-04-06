@@ -18,13 +18,12 @@ main {
         position: relative;
     }
 
-    .text {
+    p {
         position: absolute;
         bottom: 8px;
         right: 16px;
-        color: rgb(255, 208, 255);
+        color: #e5e4e7;
         font-size: 18px;
-        font-family: 'Courier New';
         letter-spacing: 2px;
 
         transition: opacity .15s visibility .15s;
@@ -33,10 +32,10 @@ main {
     }
 
     img:hover {
-        opacity: .5;
+        opacity: .75;
     }
 
-    .imgcontainer:hover .text {
+    .imgcontainer:hover p {
         visibility: visible;
         opacity: 1;
     }

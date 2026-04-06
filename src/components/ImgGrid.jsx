@@ -16,22 +16,29 @@ function ImgGrid({ fol }) {
   const mediaList = filteredMedia.map(([path, module], index) => {
     const src = module.default;
     const isVideo = path.match(/\.(mp4|webm|ogg)$/i);
+    const fileName = path.split('/').pop().replace(/\.[^/.]+$/, "");
 
     if (isVideo) {
       return (
-        <video key={path} src={src} autoPlay muted loop controls
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
+        <div className="imgcontainer" key={path}>
+          <video key={path} src={src} autoPlay muted loop controls
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+          <p>{fileName}</p>
+        </div>
       );
     }
 
     return (
       <div className="imgcontainer" key={path}>
-        <img
-          style={{ maxWidth: "100%", height: "auto" }}
-          src={src}
-          alt={`${folder} work ${index + 1}`}
-        />
+        <a href={src} target="_blank">
+          <img
+            style={{ maxWidth: "100%", height: "auto" }}
+            src={src}
+            alt={`${folder} work ${index + 1}`}
+          />
+        </a>
+        <p>{fileName}</p>
       </div>
     );
   });
