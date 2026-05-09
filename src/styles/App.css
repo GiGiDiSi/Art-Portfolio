@@ -3,7 +3,7 @@ div.icons {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    padding: 1.5rem
+    padding: .5rem
 }
 
 div.container {

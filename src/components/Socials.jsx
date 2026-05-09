@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faTumblr, faBluesky, faPixiv, faDeviantart, faItchIo} from '@fortawesome/free-brands-svg-icons';
+import {faTumblr, faBluesky, faPixiv, faDeviantart, faItchIo, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function Socials(){
     return(
         <>
+            <div  className="container">
             <div className="icons">
                 <a href="https://www.tumblr.com/blog/gigidisi" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faTumblr}/></h2>
@@ -15,6 +16,14 @@ function Socials(){
                 <a href="https://gigidisi.itch.io/" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faItchIo}/></h2>
                 </a>
+
+                
+            </div>
+            <div className="icons">
+                <a href="https://github.com/GiGiDiSi" target="_blank">
+                    <h2 className='icon'><FontAwesomeIcon icon={faGithub}/></h2>
+                </a>
+
                 <a href="https://www.pixiv.net/en/users/74551643" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faPixiv}/></h2>
                 </a>
@@ -22,6 +31,7 @@ function Socials(){
                 <a href="https://www.deviantart.com/gigidisi" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faDeviantart}/></h2>
                 </a>
+            </div>
             </div>
         </>
     )
