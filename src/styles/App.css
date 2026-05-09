@@ -25,19 +25,34 @@ div.card {
 a, .icon {
     text-decoration: none;
     transition: .2s;
-    color: #fdd6dd;
-}
-
-.icon:hover{
     color: #f178a1;
 }
 
+
 .btn{
     width: 13rem;
+    height: 3rem;
+    background-color: #1A1A1D;
+    color: #f1e8d6;
+    cursor: pointer;
+    transition: .25s;
 }
 
-.fade-in-element {
-  animation: fadein 0.5s forwards;
+.btn:hover{
+    background-color: #f1e8d6;
+    color: #1A1A1D;
+}
+
+.icon:hover,
+a:hover{
+    color: #f1e8d6;
+}
+
+.btn{
+    margin: 1%;
+}
+.fade-in-page {
+  animation: fadein 0.5s ease-in forwards;
 }
 
 @keyframes fadein {

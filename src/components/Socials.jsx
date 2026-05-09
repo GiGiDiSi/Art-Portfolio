@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faTumblr, faBluesky, faPixiv, faDeviantart} from '@fortawesome/free-brands-svg-icons';
+import {faTumblr, faBluesky, faPixiv, faDeviantart, faItchIo} from '@fortawesome/free-brands-svg-icons';
 
 function Socials(){
     return(
@@ -11,6 +11,9 @@ function Socials(){
 
                 <a href="https://bsky.app/profile/gigidisi.bsky.social" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faBluesky}/></h2>
+                </a>
+                <a href="https://gigidisi.itch.io/" target="_blank">
+                    <h2 className='icon'><FontAwesomeIcon icon={faItchIo}/></h2>
                 </a>
                 <a href="https://www.pixiv.net/en/users/74551643" target="_blank">
                     <h2 className='icon'><FontAwesomeIcon icon={faPixiv}/></h2>

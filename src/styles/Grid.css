@@ -6,7 +6,6 @@ main {
     
     img {
         width: 100%;
-        margin-bottom: 10px;
         backface-visibility: hidden;
         border-radius: 25px;
 
@@ -18,94 +17,37 @@ main {
         position: relative;
     }
 
-    p {
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
-        color: #e5e4e7;
+    .imgcontainer p {
         font-size: 18px;
         letter-spacing: 2px;
+        padding: 0 0 10px 0;
+        text-decoration: underline;
 
-        transition: opacity .15s visibility .15s;
+        transition: opacity .15s;
         visibility: hidden;
         opacity: 0;
     }
 
-    img:hover {
-        opacity: .75;
-    }
-
     .imgcontainer:hover p {
+        transition: opacity .15s;
         visibility: visible;
         opacity: 1;
     }
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-
+@media only screen and (max-width: 600px) {
+  main {
+    columns: 150px;
+    column-gap: 20px;
+  }
 }
 
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    max-height: 650px;
+
+.custom-zoom [data-rmiz-modal-overlay="visible"] {
+    background-color: #02070a8d; /* Custom background color */
 }
 
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-
-    main {
-        columns: 150px;
-    }
+.custom-zoom [data-rmiz-modal-overlay], 
+.custom-zoom [data-rmiz-modal-img] {
+    transition-duration: 0.5s; /* Custom animation speed */
 }

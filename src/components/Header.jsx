@@ -15,6 +15,7 @@ function Header(){
                     icon={(SidebarOpen) ? faX : faBars} 
                     onClick={toggleSidebar} 
                     style={{ cursor: 'pointer' }} // Adds the missing pointer visual
+                    className="icon"
                 /></h2>
             </header>
             <Sidebar isOpen={SidebarOpen}/>

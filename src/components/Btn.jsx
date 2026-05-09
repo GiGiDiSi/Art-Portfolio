@@ -8,7 +8,7 @@ function Btn() {
         <div className="container">
                 {folders.map(f => (
                     <Link to={f} key={f}>
-                        <button key={f} className='btn btn-dark' >
+                        <button key={f} className='btn' >
                         <h3>{f}</h3>
                         </button>
                     </Link>

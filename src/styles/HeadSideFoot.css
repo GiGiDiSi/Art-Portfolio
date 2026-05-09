@@ -8,9 +8,10 @@ header, footer{
 footer{
     bottom: 0;
     height: 100px;
-    border-top: 3px solid #e5e4e7;
+    border-top: 1px solid #4d5963;
     justify-content: center;
     font-size: small;
+    color: #5e5e5e;
 }
 
 header{
@@ -28,7 +29,8 @@ header{
     left: 0;
     width: 300px;
     height: 100%;
-    background-color: #372d36;
+    background-color: #110d1b;
+    border-right: 2px solid #efefef;
     z-index: 5; /* Make sure this is higher than other content */
     
     /* This moves the sidebar completely off-screen to the left */
